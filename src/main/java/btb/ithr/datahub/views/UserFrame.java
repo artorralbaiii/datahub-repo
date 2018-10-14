@@ -22,5 +22,8 @@ public class UserFrame extends JFrame {
 		Utility.changeFont(userPanel, new Font("Tahoma", Font.PLAIN, 14));
 
 		add(userPanel, BorderLayout.CENTER);
+
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setVisible(true);
 	}
 }

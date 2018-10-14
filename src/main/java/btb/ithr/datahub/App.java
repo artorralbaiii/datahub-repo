@@ -1,6 +1,5 @@
 package btb.ithr.datahub;
 
-import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
 
 import btb.ithr.datahub.views.MainFrame;

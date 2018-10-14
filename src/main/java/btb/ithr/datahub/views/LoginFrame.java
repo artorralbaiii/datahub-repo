@@ -23,6 +23,8 @@ public class LoginFrame extends JFrame {
 		Utility.changeFont(loginPanel, new Font("Tahoma", Font.PLAIN, 14));
 
 		add(loginPanel, BorderLayout.CENTER);
-
+		
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setVisible(true);
 	}
 }
