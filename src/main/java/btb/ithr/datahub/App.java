@@ -1,8 +1,9 @@
 package btb.ithr.datahub;
 
 import javax.swing.JFrame;
+import javax.swing.SwingUtilities;
 
-import btb.ithr.datahub.views.UserFrame;
+import btb.ithr.datahub.views.MainFrame;
 
 public class App {
 	public static void main(String[] args) {
@@ -10,8 +11,18 @@ public class App {
 //		loginFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 //		loginFrame.setVisible(true);
 
-		UserFrame userFrame = new UserFrame();
-		userFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		userFrame.setVisible(true);
+//		UserFrame userFrame = new UserFrame();
+//		userFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//		userFrame.setVisible(true);
+		
+//		MainFrame mainFrame = new MainFrame();
+//		mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//		mainFrame.setVisible(true);
+//		
+		SwingUtilities.invokeLater(new Runnable() {
+			public void run() {
+				new MainFrame();
+			}
+		});	
 	}
 }

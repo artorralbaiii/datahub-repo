@@ -16,7 +16,7 @@ public class LoginFrame extends JFrame {
 		// *** Frame Properties ***
 		setLayout(new BorderLayout());
 		setResizable(false);
-		setSize(new Dimension(400, 140));
+		setSize(new Dimension(400, 150));
 		setLocationRelativeTo(null);
 
 		LoginPanel loginPanel = new LoginPanel();
