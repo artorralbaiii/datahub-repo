@@ -20,7 +20,7 @@ public class LoginPanel extends JPanel {
 	private JButton btnNewUser;
 
 	public LoginPanel() {
-		Border innerBorder = BorderFactory.createTitledBorder("Authentication");
+		Border innerBorder = BorderFactory.createEtchedBorder(); // createTitledBorder("Authentication");
 		Border outerBorder = BorderFactory.createEmptyBorder(5, 5, 5, 5);
 
 		setBorder(BorderFactory.createCompoundBorder(outerBorder, innerBorder));
