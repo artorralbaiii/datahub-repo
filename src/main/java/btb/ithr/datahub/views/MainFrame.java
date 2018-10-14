@@ -28,7 +28,7 @@ public class MainFrame extends JFrame {
 		MainPanel mainPanel = new MainPanel();
 		Utility.changeFont(mainPanel, new Font("Tahoma", Font.PLAIN, 14));
 
-		add(mainPanel, BorderLayout.NORTH);
+		add(mainPanel, BorderLayout.CENTER);
 
 		setJMenuBar(createMenuBar());
 

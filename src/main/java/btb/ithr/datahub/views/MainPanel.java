@@ -9,10 +9,12 @@ import javax.swing.border.Border;
 public class MainPanel extends JPanel {
 
 	SearchPanel searchPanel;
+	DataPanel dataPanel;
 
 	public MainPanel() {
 
 		searchPanel = new SearchPanel();
+		dataPanel = new DataPanel();
 
 		Border innerBorder = BorderFactory.createEtchedBorder();
 		Border outerBorder = BorderFactory.createEmptyBorder(5, 5, 5, 5);
@@ -25,7 +27,8 @@ public class MainPanel extends JPanel {
 	public void layoutComponents() {
 		setLayout(new BorderLayout());
 
-		add(searchPanel, BorderLayout.CENTER);
+		add(searchPanel, BorderLayout.NORTH);
+		add(dataPanel, BorderLayout.CENTER);
 
 	}
 }
