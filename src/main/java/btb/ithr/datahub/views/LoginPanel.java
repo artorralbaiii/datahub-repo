@@ -17,6 +17,7 @@ public class LoginPanel extends JPanel {
 	private JTextField fldUsername;
 	private JPasswordField fldPassword;
 	private JButton btnLogin;
+	private JButton btnNewUser;
 
 	public LoginPanel() {
 		Border innerBorder = BorderFactory.createTitledBorder("Authentication");
@@ -27,6 +28,7 @@ public class LoginPanel extends JPanel {
 		fldUsername = new JTextField(20);
 		fldPassword = new JPasswordField(20);
 		btnLogin = new JButton("Login");
+		btnNewUser = new JButton("New User");
 
 		layoutComponents();
 	}
@@ -89,6 +91,12 @@ public class LoginPanel extends JPanel {
 		gc.insets = new Insets(0, 0, 0, 5);
 
 		add(btnLogin, gc);
+
+		gc.gridx = 1;
+		gc.insets = new Insets(0, 70, 0, 0);
+		gc.anchor = GridBagConstraints.FIRST_LINE_START;
+
+		add(btnNewUser, gc);
 
 	}
 
