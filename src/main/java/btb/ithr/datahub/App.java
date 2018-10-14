@@ -3,6 +3,7 @@ package btb.ithr.datahub;
 import javax.swing.SwingUtilities;
 
 import btb.ithr.datahub.views.DataFormFrame;
+import btb.ithr.datahub.views.MainFrame;
 
 public class App {
 	public static void main(String[] args) {
@@ -20,7 +21,7 @@ public class App {
 //		
 		SwingUtilities.invokeLater(new Runnable() {
 			public void run() {
-				new DataFormFrame();
+				new MainFrame();
 			}
 		});	
 	}

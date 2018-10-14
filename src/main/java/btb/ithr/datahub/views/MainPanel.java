@@ -10,11 +10,13 @@ public class MainPanel extends JPanel {
 
 	SearchPanel searchPanel;
 	DataPanel dataPanel;
+	HistoryPanel historyPanel;
 
 	public MainPanel() {
 
 		searchPanel = new SearchPanel();
 		dataPanel = new DataPanel();
+		historyPanel = new HistoryPanel();
 
 		Border innerBorder = BorderFactory.createEtchedBorder();
 		Border outerBorder = BorderFactory.createEmptyBorder(5, 5, 5, 5);
@@ -29,6 +31,7 @@ public class MainPanel extends JPanel {
 
 		add(searchPanel, BorderLayout.NORTH);
 		add(dataPanel, BorderLayout.CENTER);
+		add(historyPanel, BorderLayout.EAST);
 
 	}
 }
